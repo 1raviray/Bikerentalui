@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RidePro Rentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bike.css">
+    <script src="Formvalidation.js"></script>
+</head>
+<body>
+    <header class="top-sticky">
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><h1 class="fw-bold">Ride<span class="text-warning">Pro</span></h1></a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-items-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item pt-2">
+                            <a class="nav-link nav-hover active" href="#" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link nav-hover" href="bike-blog.html">Blog</a>
+                        </li>   
+                        <li class="nav-item pt-2">
+                            <a class="nav-link nav-hover" href="All bikes.html">All Bikes</a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link nav-hover" href="bike-faq.html">FAQs</a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link nav-hover" href="list-bike.html">List Your Bike</a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link nav-hover" href="#sidenav" data-bs-toggle="offcanvas">More</a>
+                        </li>
+                        <li class="nav-item p-0">
+                            <a class="nav-link" href="#"><button class="btn btn-warning text-light" data-bs-target="#signup" data-bs-toggle="modal">Signup</button></a>
+                        </li>
+                        <li class="nav-item p-0">
+                            <a class="nav-link" href="#"><button class="btn btn-warning text-light" data-bs-target="#signin" data-bs-toggle="modal">Login</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-start w-25 offcanvas-width" id="sidenav">
+        <div class="offcanvas-header">
+            <h5>More</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#whyridepro">Why RidePro?</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#rideit">Check Bike List</a>
+                </li>   
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#working">How we works?</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#minifaq">FAQs</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="bike.html">Move to Top</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container form col-12">
+            <div class="p-4 rounded herowidth">
+                <form action="All bikes.html" onsubmit="return validate()" class="position-relative z-2">
+                    <h3 class=" fw-semibold text-white text-center mb-3">Explore the City on Two Wheels!</h2>
+                    <input id="location" class="rounded p-2 form-control mb-2 w-100"  type="text" placeholder="Enter Location">
+                    <p id="locationerror" class="m-0 text-danger mb-2"></p>
+                    <input id="pickup" class="rounded p-2 form-control mb-2 w-100"  type="text" placeholder="Enter pickup">
+                    <p id="pickuperror" class="m-0 text-danger mb-2"></p>
+                    <input id="date" class="rounded p-2 form-control mb-2 w-100"  type="date">
+                    <p id="dateerror" class="m-0 text-danger mb-2"></p>
+                    <button class="btn btn-warning w-100">Explore Bikes</button>
+                </form>
+                <div class="heroeffect"></div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-dark-subtle py-5" id="whyridepro">
+        <div class="container">
+            <h2 class="text-capitalize fw-semibold text-center">Expirence the best of riding with our services</h2>
+            <div class="row mt-3 p-3 col-10 m-auto rounded rounded-5 shadow bg-light">
+                <div class="col-12 m-auto p-3 col-lg-3 ">
+                    <div class="card  border border-0 bg-transparent">
+                        <img class="card-img-top w-50 rounded-circle m-auto shadow" src="helmet.avif" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-5">Safety and free helmet</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 m-auto p-3 col-lg-3">
+                    <div class="card border border-0 bg-transparent">
+                        <img class="card-img-top w-50 rounded-circle m-auto shadow" src="cash.jpg" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-5">Low Cost</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 m-auto p-3 col-lg-3">
+                    <div class="card border border-0 bg-transparent">
+                        <img class="card-img-top w-50 rounded-circle m-auto shadow" src="bookinng.avif" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-5">Hassel free Booking</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 m-auto p-3 col-lg-3">
+                    <div class="card border border-0 bg-transparent">
+                        <img class="card-img-top w-50 rounded-circle m-auto shadow" src="Variety.jpg" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-5">Variety of Bikes</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="rideit">
+        <h2 class="text-center fw-semibold mt-5 ">Ride it, Like it, Love it</h2>
+            <div class="mb-3 text-end">
+                <select class="bg-light border border-0 shadow">
+                    <option selected>Sort</option>
+                    <option value="">Distance</option>
+                    <option value="">price high to low</option>
+                    <option value="">Price Low to high</option>
+                </select>
+                <select class="bg-light border border-0 shadow">
+                    <option selected>Filter</option>
+                    <option value="">Gear</option>
+                    <option value="">Gearless</option>
+                    <option value="">Premium</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto  " src="https://www.rapido.rentals/assets/images/home/bikes/activa6g.webp" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">Activa 6G</h4>
+                            <p>₹549 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto " src="rc390-removebg-preview.png" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">KTM RC 390</h4>
+                            <p>₹1299 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto " src="rtr200-removebg-preview.png" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">TVS Apache RTR</h4>
+                            <p>₹999 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto " src="shine-removebg-preview.png" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">Honda Shine</h4>
+                            <p>₹699 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto " src="r15-removebg-preview.png" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">Yamaha R15</h4>
+                            <p>₹999 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto " src="https://www.rapido.rentals/assets/images/home/bikes/platina.webp" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">Bajaj Platina</h4>
+                            <p>₹599 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto  w-100" src="https://www.rapido.rentals/assets/images/home/bikes/bullet350.webp" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">Royal Enfield 350</h4>
+                            <p>₹1199 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-3 m-auto p-3">
+                    <div class="card p-2 border border-0 shadow  position-relative card-hover">
+                        <img class="card-img-top bike m-auto " src="https://production-rapido-rentals.storage.googleapis.com/vehicles/thumbnail/1703052794790-000000-download.jpg" alt="Title" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-semibold">Yamaha FZ-S</h4>
+                            <p>₹899 per Day</p>
+                           <a href="All bikes.html"> <button class="btn btn-warning btn-hover position-absolute" style=" right: 25%;top: 40%">Check Availability</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center">
+               <a href="All bikes.html"> <button class="btn btn-warning btn-w250 mt-3">View all</button></a>
+            </div>
+    </section>
+    <section class="container" id="working">
+        <h2 class="text-center fw-semibold mt-5 ">How RidePro works?</h2>
+        <div class="row mt-3 p-3 col-10 m-auto rounded rounded-5 shadow">
+            <div class="col-8 m-auto pt-3 col-lg-2 ">
+                <div class="card border-0">
+                    <i class="bi bi-calendar4-range iconshw"></i>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Select Pick and Drop Dates</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 m-auto pt-3 col-lg-2 ">
+                <div class="card border-0">
+                    <i class="bi bi-bicycle iconshw"></i>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Choose Bike</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 m-auto pt-3 col-lg-2 ">
+                <div class="card border-0">
+                    <i class="bi bi-phone iconshw"></i>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Book Online</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 m-auto pt-3 col-lg-2 ">
+                <div class="card border-0">
+                    <i class="bi bi-map iconshw"></i>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Enjoy your Ride</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 m-auto pt-3 col-lg-2 ">
+                <div class="card border-0">
+                    <i class="bi bi-arrow-return-left iconshw"></i>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Return and Will refund</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-dark-subtle pb-5" id="testimonial">
+        <h2 class="text-center fw-semibold mt-5 py-3 ">What Our Riders Say?</h2>
+        
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ul class="carousel-indicators list-unstyled">
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="First slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="1"
+                    aria-label="Second slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="2"
+                    aria-label="Third slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="3"
+                    aria-label="Third slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="4"
+                    aria-label="Third slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="5"
+                    aria-label="Third slide"
+                ></li>
+            </ul>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active ">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-2 p-0">
+                                <img class="w-100" src="https://img.freepik.com/free-photo/front-view-handsome-man-posing_23-2148692174.jpg?w=740&t=st=1707504160~exp=1707504760~hmac=3adaf1e87c70617e187d62c6bfcbbe35fd8de7a4eb2f2e15b8d9ba76f8f76b17" alt="">
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-center p-3 text-bg-warning">
+                                <div>
+                                    <h4 class="card-title fs-3 fw-semibold">Vishal</h4>
+                                    <p class="card-text">They have the best prices and good condition of vehicles, also they have all the support that you could require on the road in case of any mishaps. Thanks a lot to the team.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-2 p-0">
+                            <img class="w-100" src="https://img.freepik.com/free-psd/3d-illustration-young-man-white-hoodie-isolated-white-background_1142-60682.jpg?w=740&t=st=1707504410~exp=1707505010~hmac=84b30053cd8a9b03f52c5986ba6a7f7141b01b74d7ac92821338d91450ac05f0" alt="">
+                        </div>
+                        <div class="col-10 col-lg-5 d-flex align-items-center p-3 text-bg-warning">
+                            <div>
+                                <h4 class="card-title fs-3 fw-semibold">Varma</h4>
+                                <p class="card-text">Technicians was very helpful and supportive and assisted with every process of booking the vehicle. It was a great experience with RaidPro. I would definitely recommend for their rental bikes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-2 p-0">
+                                <img class="w-100" src="https://img.freepik.com/free-photo/fashionable-young-woman-standing-front-blue-backdrop_23-2148204718.jpg?w=740&t=st=1707552837~exp=1707553437~hmac=a8a43cc155c30eb8afb4ff570e8ed65b6adcce87b1873d8e08652c9264ebd170" alt="">
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-center p-3 text-bg-warning">
+                                <div>
+                                    <h4 class="card-title fs-3 fw-semibold">Samantha</h4>
+                                    <p class="card-text">Hello all, I had booked a bike for 14th Oct. Just then I noticed I booked for the wrong date and my ride will start in an 1 hrs time. It was indeed one of those day you know you have messed up. I reached out to RaidPro to see if there is anyhow I can get this fixed. Thanks to my saviour Denzil from RB, in a flash he had my concern fixed and ready to move on. I was assisted in cancelling a ride one hr prior to scehduled time. Thank you Denzil & RB - you guys are doing great stuff!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-2 p-0">
+                            <img class="w-100" src="https://img.freepik.com/free-photo/medium-shot-smiley-woman-with-white-background_23-2148385819.jpg?w=740&t=st=1707552910~exp=1707553510~hmac=c3c2eb2e25ca428de81b048734039d4d3074efc4501bdbf40be802864be46427" alt="">
+                        </div>
+                        <div class="col-10 col-lg-5 d-flex align-items-center p-3 text-bg-warning">
+                            <div>
+                                <h4 class="card-title fs-3 fw-semibold">Mythri</h4>
+                                <p class="card-text">I have just made a booking, because of connecting flights being late, I needed to shift the whole booking by a day. First of all the app and website are good, I found the app especially user friendly and the inventory is good too. On top when I needed the modification of the booking I was helped exceptionally well by Denzil in customer care. He understood the delay, helped cancel the last booking with no penalties.This took away the stress associated with such situations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-2 p-0">
+                                <img class="w-100" src="https://img.freepik.com/free-photo/front-view-woman-sitting-her-desk_23-2148218579.jpg?w=740&t=st=1707553020~exp=1707553620~hmac=edb0bac818d9416f9e3a5c80d6c30e67f0306125ab053bdc38c6aff2020aad20" alt="">
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-center p-3 text-bg-warning">
+                                <div>
+                                    <h4 class="card-title fs-3 fw-semibold">Keerthi</h4>
+                                    <p class="card-text">Paulleo did an excellent job fixing the issue, addressing both the self-start problem by changing the battery and resolving some tuning issues. Now, the self-start is working fine, and the bike starts with a single kick, all within a remarkable five minutes. His great service left me genuinely impressed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-2 p-0">
+                            <img class="w-100" src="https://img.freepik.com/free-photo/guy-plaid-shirt_158595-126.jpg?w=740&t=st=1707553105~exp=1707553705~hmac=7bc68def2680463ee39f6e10188750029a8976e2554fcf5f0038e679bf6ae0ad" alt="">
+                        </div>
+                        <div class="col-10 col-lg-5 d-flex align-items-center p-3 text-bg-warning">
+                            <div>
+                                <h4 class="card-title fs-3 fw-semibold">David Paul</h4>
+                                <p class="card-text">Vehicle was in very good condition and all the staff was very humble. Our vehicle got punctured but we got full assistance and after contacting their staff. We also get the full refund. Absolutely reliable in Bangalore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="minifaq">
+        <h1 class="fw-semibold text-center mb-5 pt-5">Frequently Asked Questions</h1>
+        <div class=" p-4 bg-light rounded-4 shd col-10 mb-3 m-auto">
+            <details class="">
+                <summary class="">What documents are needed to book a vehicle? </summary>
+                <p class="p-2 fw-semibold">
+                    Aadhar card and Driving license You will need to share the documents before bike pick-up time
+                </p>
+            </details>
+        </div>
+        <div class=" p-4 bg-light rounded-4 shd col-10 mb-3 m-auto">
+            <details class="">
+                <summary class="">Is fuel cost included in the booking amount? </summary>
+                <p class="p-2 fw-semibold">
+                    No, the fuel cost is not included in the vehicle booking amount. Fuel cost has to be borne by the customer.
+                </p>
+            </details>
+        </div>
+        <div class=" p-4 bg-light rounded-4 shd col-10 mb-3 m-auto">
+            <details class="">
+                <summary class="">Will I get a complimentary helmet?  </summary>
+                <p class="p-2 fw-semibold">
+                    One complimentary helmet will be provided to the customer at no extra cost. If the customer is accompanied by a pillion rider, we suggest the customer bring their own helmets.
+                </p>
+            </details>
+        </div>
+        <div class="text-center p-5">
+            <a href="bike-faq.html"><button class="btn btn-warning">Show More</button></a>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 m-auto text-light">
+                    <h6>ABOUT</h6>
+                    <p>RaidPro Rental is a brand new bike rental website. RaidPro Rentals has selected a few of the trusted Bike Vendor Partners in all over india who provide available bikes for rent.</p>
+                </div>
+                <div class="col-12 col-lg-4 m-auto text-light">
+                    <ul class="list-unstyled">
+                        <li><a class="link-light text-decoration-none" href=""><h6>COMPANY</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>FAQs</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>PRIVACY POLACY</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>DISCLAIMER POLACY</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>TERMS AND CONDITIONS</h6></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 m-auto text-light">
+                    <h6>FOLLOW US</h6>
+                    <i class="fs-5 pr-3 bi bi-instagram"></i>
+                    <i class="fs-5 p-3 bi bi-facebook"></i>
+                    <i class="fs-5   bi bi-twitter-x"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="signup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Signup</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return Signup()">
+                        <div class="mb-3">
+                            <label class="w-100 d-flex">Full name<span id="SignupNameError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupName" type="text" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Phone number<span id="SignupPhoneError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupPhone" type="tel" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Email<span id="SignupEmailError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupEmail" type="email" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Set Password<span id="SignupSetPassError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupSetPass" type="password" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Confirm Password<span id="SignupConfirmPassError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupConfirmPass" type="password" class=" form-control mb-2"/>
+                            <div class="text-center">
+                                <input type="submit" class="bg-warning btn btn-w250 w-100" value="Signup">
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="signin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>login</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return Signin()">
+                        <div class="mb-3">
+                            
+                            <label class="w-100 d-flex">Email<span id="SigninEmailError" class="ms-auto text-danger"></span></label>
+                            <input id="SigninEmail" type="email" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Set Password<span id="SigninSetPassError" class="ms-auto text-danger"></span></label>
+                            <input id="SigninSetPass" type="password" class=" form-control mb-2"/>
+                            <div class="text-center">
+                                <input type="submit" class="bg-warning btn btn-w250 w-100" value="Signin">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

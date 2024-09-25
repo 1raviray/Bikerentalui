@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RidePro Rentals-List your Bike</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bike.css">
+    <script src="Formvalidation.js"></script>
+</head>
+<body>
+    <header class="top-sticky">
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><h1 class="fw-bold">Ride<span class="text-warning">Pro</span></h1></a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-items-end" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item pt-2">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link" href="bike-blog.html">Blog</a>
+                        </li>   
+                        <li class="nav-item pt-2">
+                            <a class="nav-link" href="All bikes.html">All Bikes</a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link" href="bike-faq.html">FAQs</a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a class="nav-link" href="list-bike.html">List Your Bike</a>
+                        </li>
+                        
+                        <li class="nav-item p-0">
+                            <a class="nav-link" href="#"><button class="btn btn-warning text-light" data-bs-target="#signup" data-bs-toggle="modal">Signup</button></a>
+                        </li>
+                        <li class="nav-item p-0">
+                            <a class="nav-link" href="#"><button class="btn btn-warning text-light" data-bs-target="#signin" data-bs-toggle="modal">Login</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-start" id="sidenav">
+        <div class="offcanvas-header">
+            <h5>Menu</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#whyridepro">Why RidePro?</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>   
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#">All Bikes</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="#">List Your Bike</a>
+                </li>
+                <li class="nav-item pt-2">
+                    <a class="nav-link" href="bike-faq.html">FAQs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+    <section class="container-fluid listbikebg">
+        <div class="container form">
+            <div>
+                <h1 class="fw-bold d-inline">List Your Bike,<br>Earn with</h1>
+                <h1 class="fw-bold text-light d-inline  ">Ride<span class="text-warning">Pro</span></h1><br>
+                <a href="#formid"><button class="btn btn-warning mt-3">Start your Earnings</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="container dproper1">
+        <h1 class="fw-semibold text-center mt-5" >How <span class="text-warning">List your bike</span> Works?</h1>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img class="png-width" src="Site Stats-rafiki.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 m-auto">
+                <h2 class="fw-semibold">Check Your Eligibility</h2>
+                <p class="fs-5">Submit your contact details. Our team will contact you to confirm your eligibility and clarify your doubts.</p>
+            </div>
+            <div class="col-12 col-lg-6 m-auto">
+                <h2 class="fw-semibold">Get GPS Tracking</h2>
+                <p class="fs-5">Once your eligibility is confirmed, we'll install a GPS device for vehicle tracking at no upfront cost.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="png-width" src="GPS navigator-rafiki.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="png-width" src="Banknote-rafiki.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 m-auto">
+                <h2 class="fw-semibold">Start Earning</h2>
+                <p class="fs-5">list your Bike for people to rent it and start earning.</p>
+                <a href="#formid"><button class="btn btn-warning mt-3">Start your Earnings</button></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <img src="ads.jpg" class="w-100" alt="">
+    </div>
+
+    <section class="container dproper">
+        <h1 class="fw-semibold fs-2 text-center " >How <span>List your bike</span> Works?</h1>
+        <div class="row">
+            <div class="col-9 col-lg-6 m-auto">
+                <img class="w-100" src="Site Stats-rafiki.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 px-4 m-auto">
+                <h1 class="fw-semibold fs-3">Check Your Eligibility</h1>
+                <p class="fs-6">Submit your contact details. Our team will contact you to confirm your eligibility and clarify your doubts.</p>
+            </div>
+            <div class="col-9 col-lg-6 m-auto">
+                <img class="w-100" src="GPS navigator-rafiki.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 px-4 m-auto">
+                <h1 class="fw-semibold fs-3">Get GPS Tracking</h1>
+                <p class="fs-6">Once your eligibility is confirmed, we'll install a GPS device for vehicle tracking at no upfront cost.</p>
+            </div>
+            <div class="col-9 col-lg-6 m-auto">
+                <img class="w-100" src="Banknote-rafiki.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 px-4 m-auto">
+                <h1 class="fw-semibold fs-3">Start Earning</h1>
+                <p class="fs-6">list your Bike for people to rent it and start earning.</p>
+                <button class="btn btn-warning mt-3">Start your Earnings</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="formid" class=" container mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-5 p-0">
+                <form class="p-5 rounded-4 bg-warning-subtle h-100" onsubmit="return Listbike()">
+                    <h3 class=" fw-bold">Fill Details to List your Bike</h3>
+                    <label class="w-100 d-flex">Full name<span id="FullNameError" class="ms-auto text-danger"></span></label>
+                    <input id="FullName" type="text" class=" form-control mb-2"/>
+                    <label class="w-100 d-flex">Phone number<span id="PhoneNumError" class="ms-auto text-danger"></span></label>
+                    <input id="PhoneNum" type="text" class=" form-control mb-2"/>
+                    <label class="w-100 d-flex">Bike number<span id="BikeNumError" class="ms-auto text-danger"></span></label>
+                    <input id="BikeNum" type="text" class=" form-control mb-2"/>
+                    <label class="w-100 d-flex">Bike name/model<span id="BikeModelError" class="ms-auto text-danger"></span></label>
+                    <input id="BikeModel" type="text" class=" form-control mb-2"/>
+                    <!-- <div class="d-flex">
+                        <input id="radioBtn" type="checkbox" class="form-check mb-2"/>
+                        <label class="w-100 d-flex ms-2">Agree our terms and conditions</label>
+                    </div> -->
+                    <!-- <span id="radioBtnError" class="text-danger"></span> -->
+                    <input type="submit" value="Submit" class=" btn btn-warning w-100 mt-3">
+                </form>
+            </div>
+            <div class="col-12 col-lg-7 p-0">
+                <img src="bike.jpg" class=" w-100 h-100 rounded-4">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="text-capitalize fw-semibold mt-5 text-center">why should be on ridepro</h2>
+        <div class="row">
+            <div class="col-9 p-3 col-lg-3 m-auto ">
+                <div class="card border-0">
+                    <img class="card-img-top w-100" src="Make it rain-cuate.png" alt="Title" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-semibold">Additional Money</h3>
+                        <p>Earn without any investment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 p-3 col-lg-3 m-auto">
+                <div class="card border-0">
+                    <img class="card-img-top w-100" src="Marketing-rafiki.png" alt="Title" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-semibold">Convience</h3>
+                        <p>Rent out the 2-wheeler lying unused.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 p-3 col-lg-3 m-auto">
+                <div class="card border-0">
+                    <img class="card-img-top w-100" src="Self confidence-rafiki.png" alt="Title" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-semibold">Demand</h3>
+                        <p>RaidPro gets you customers! You spend nothing on marketing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 p-3 col-lg-3 m-auto">
+                <div class="card border-0">
+                    <img class="card-img-top w-100" src="Address-rafiki.png" alt="Title" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title fw-semibold">Safety</h3>
+                        <p>You can get a GPS device fitted to your bike for live tracking and peace of mind. All rides are also covered by RaidPro Rental Protect </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <img src="https://www.rapido.rentals/assets/images/earn/refral-banner.webp" class="w-100" alt="">
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="card text-center border-0 ">
+                    <i class="iconshw bi bi-people-fill"></i>
+                    <div class="card-body">
+                        <h4 class="card-title fw-semibold">30 Lakh +</h4>
+                        <p class="card-text">Active Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card text-center border-0 ">
+                    <i class="iconshw bi bi-bicycle stroke p-2"></i>
+                    <div class="card-body">
+                        <h4 class="card-title fw-semibold">100's</h4>
+                        <p class="card-text">Vechicles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card text-center border-0 ">
+                    <i class="iconshw bi bi-piggy-bank-fill"></i>
+                    <div class="card-body">
+                        <h4 class="card-title fw-semibold">₹2500 - ₹25000</h4>
+                        <p class="card-text">Earning per Month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div><h1 class="text-center mt-5">Testimonial</h1></div>
+    <section class="container-fluid p-5 dproper1">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ul class="carousel-indicators list-unstyled">
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="First slide"></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="1"
+                    aria-label="Second slide"></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="2"
+                    aria-label="Third slide"></li>
+            </ul>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-6 border-left">
+                                <p>I used to travel on my bike everyday but after discovering RaidPro Rentals, I travel with a friend; saving money for both of us. RaidPro Rentals also helps us earn extra pocket money.</p>
+                                <h3>Karthik</h3>
+                            </div>
+                            <div class="col-2">
+                                <img class="w-100 rounded-circle border border-3 border-warning" src="https://img.freepik.com/free-photo/hipster-vacation-lake_23-2147978816.jpg?w=740&t=st=1707583115~exp=1707583715~hmac=3b0b8f9f8d46812d36bbc43702e3ae8388ba1d2dbbdf70e3c23dbba13dd9cc24" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-6 border-left">
+                                <p>I used to travel on my bike everyday but after discovering RaidPro Rentals, I travel with a friend; saving money for both of us. RaidPro Rentals also helps us earn extra pocket money.</p>
+                                <h3>Sathwik</h3>
+                            </div>
+                            <div class="col-2">
+                                <img class="w-100 rounded-circle border border-3 border-warning" src="https://img.freepik.com/free-photo/front-view-happy-lawyer-with-smartphone_23-2148230858.jpg?w=740&t=st=1707585360~exp=1707585960~hmac=f6a4c36a5ef1a68422045763d8b4ef75c87b0eb667b86c822d2a1579bd8aa24a" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-6 border-left">
+                                <p>They have the best prices and good condition of vehicles, also they have all the support that you could require on the road in case of any mishaps. Thanks a lot to the team.</p>
+                                <h3>Bhanu Devi</h3>
+                            </div>
+                            <div class="col-2">
+                                <img class="w-100 rounded-circle border border-3 border-warning" src="https://img.freepik.com/free-photo/portrait-woman-teaching-sign-language_23-2148719688.jpg?w=740&t=st=1707585559~exp=1707586159~hmac=5b9c40ccc8ef794dea0f92003aa04457a1b172d284edc916065183f118bebab8" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+    </section>
+    <section class="container-fluid p-5 dproper">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ul class="carousel-indicators list-unstyled">
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="First slide"></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="1"
+                    aria-label="Second slide"></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="2"
+                    aria-label="Third slide"></li>
+            </ul>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item bg-danger-subtle p-3 active">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <img class="w-100 rounded-circle border border-3 border-warning" src="https://img.freepik.com/free-photo/hipster-vacation-lake_23-2147978816.jpg?w=740&t=st=1707583115~exp=1707583715~hmac=3b0b8f9f8d46812d36bbc43702e3ae8388ba1d2dbbdf70e3c23dbba13dd9cc24" alt="">
+                            </div>
+                            <div class="col-10 border-left">
+                                <p>I used to travel on my bike everyday but after discovering RaidPro Rentals, I travel with a friend; saving money for both of us. RaidPro Rentals also helps us earn extra pocket money.</p>
+                                <h3>Karthik</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-danger-subtle">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <img class="w-100 rounded-circle border border-3 border-warning" src="https://img.freepik.com/free-photo/front-view-happy-lawyer-with-smartphone_23-2148230858.jpg?w=740&t=st=1707585360~exp=1707585960~hmac=f6a4c36a5ef1a68422045763d8b4ef75c87b0eb667b86c822d2a1579bd8aa24a" alt="">
+                            </div>
+                            <div class="col-10 border-left">
+                                <p>I used to travel on my bike everyday but after discovering RaidPro Rentals, I travel with a friend; saving money for both of us. RaidPro Rentals also helps us earn extra pocket money.</p>
+                                <h3>Sathwik</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-danger-subtle bg-danger-subtle">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <img class="w-100 rounded-circle border border-3 border-warning" src="https://img.freepik.com/free-photo/portrait-woman-teaching-sign-language_23-2148719688.jpg?w=740&t=st=1707585559~exp=1707586159~hmac=5b9c40ccc8ef794dea0f92003aa04457a1b172d284edc916065183f118bebab8" alt="">
+                            </div>
+                            <div class="col-10 border-left">
+                                <p>They have the best prices and good condition of vehicles, also they have all the support that you could require on the road in case of any mishaps. Thanks a lot to the team.</p>
+                                <h3>Bhanu Devi</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="bg-black pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 m-auto text-light">
+                    <h6>ABOUT</h6>
+                    <p class="fs-6">RaidPro Rental is a brand new bike rental website. RaidPro Rentals has selected a few of the trusted Bike Vendor Partners in all over india who provide available bikes for rent.</p>
+                </div>
+                <div class="col-12 col-lg-4 m-auto text-light">
+                    <ul class="list-unstyled">
+                        <li><a class="link-light text-decoration-none" href=""><h6>COMPANY</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>FAQs</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>PRIVACY POLACY</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>DISCLAIMER POLACY</h6></a></li>
+                        <li><a class="link-light text-decoration-none" href=""><h6>TERMS AND CONDITIONS</h6></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 m-auto text-light">
+                    <h6>FOLLOW US</h6>
+                    <i class="fs-5 pr-3 bi bi-instagram"></i>
+                    <i class="fs-5 p-3 bi bi-facebook"></i>
+                    <i class="fs-5   bi bi-twitter-x"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="signup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Signup</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return Signup()">
+                        <div class="mb-3">
+                            <label class="w-100 d-flex">Full name<span id="SignupNameError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupName" type="text" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Phone number<span id="SignupPhoneError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupPhone" type="tel" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Email<span id="SignupEmailError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupEmail" type="email" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Set Password<span id="SignupSetPassError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupSetPass" type="password" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Confirm Password<span id="SignupConfirmPassError" class="ms-auto text-danger"></span></label>
+                            <input id="SignupConfirmPass" type="password" class=" form-control mb-2"/>
+                            <div class="text-center">
+                                <input type="submit" class="bg-warning btn btn-w250 w-100" value="Signup">
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="signin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>login</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return Signin()">
+                        <div class="mb-3">
+                            
+                            <label class="w-100 d-flex">Email<span id="SigninEmailError" class="ms-auto text-danger"></span></label>
+                            <input id="SigninEmail" type="email" class=" form-control mb-2"/>
+                            <label class="w-100 d-flex">Set Password<span id="SigninSetPassError" class="ms-auto text-danger"></span></label>
+                            <input id="SigninSetPass" type="password" class=" form-control mb-2"/>
+                            <div class="text-center">
+                                <input type="submit" class="bg-warning btn btn-w250 w-100" value="Signin">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
